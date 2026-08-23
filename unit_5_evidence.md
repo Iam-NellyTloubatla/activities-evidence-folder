@@ -141,17 +141,17 @@ Here are three major security risks that occur when security responsibilities ar
 🔹 Task Management Flow
 User → Client → Request → Firebase → Response → Client → User
 
-1. User action → Learner clicks “Create Task” and enters details (title, deadline, notes).
-2. JavaScript in browser → Captures input, validates required fields (e.g., no empty title).
-3. Validation → Client-side checks (format, completeness).
-4. Information leaving browser → Validated task data sent via Firebase SDK/REST API.
-5. Firebase service receiving request → Firebase Realtime Database.
-6. Firebase action → Stores new task under learner’s unique ID.
-7. Response/data returned → Confirmation or error message.
-8. JavaScript processes result → Updates local state with new task.
-9. Interface updated → DOM refreshes dashboard to show the new task.
+1.  User action → Learner clicks “Create Task” and enters details (title, deadline, notes).
+2.  JavaScript in browser → Captures input, validates required fields (e.g., no empty title).
+3.  Validation → Client-side checks (format, completeness).
+4.  Information leaving browser → Validated task data sent via Firebase SDK/REST API.
+5.  Firebase service receiving request → Firebase Realtime Database.
+6.  Firebase action → Stores new task under learner’s unique ID.
+7.  Response/data returned → Confirmation or error message.
+8.  JavaScript processes result → Updates local state with new task.
+9.  Interface updated → DOM refreshes dashboard to show the new task.
 10. If request fails → Error message displayed, retry option offered.
-    
+
         OR
 
 🔹 Progress Tracking Flow
